@@ -5,7 +5,7 @@ class NtfyService:
     def __init__(self, url, token, priority):
         self.url = url
         self.token = token
-        self.priority = priority
+        self.priority = priority if priority else 3
     def notify(self, title, message, priority):
         headers = { "Title": title, "Priority": str(self.priority) }
         if self.token:

@@ -90,4 +90,4 @@ TELEGRAM_CHAT_ID: Optional[str] = os.environ.get("TELEGRAM_CHAT_ID")
 ENCRYPTION_KEY: str = os.environ["ENCRYPTION_KEY"]
 NTFY_TOKEN: Optional[str] = os.environ.get("NTFY_TOKEN")
 NTFY_URL: Optional[str] = os.environ.get("NTFY_URL")
-NTFY_PRIORITY: int = int(os.environ["NTFY_PRIORITY"])
+NTFY_PRIORITY: Optional[str] = os.environ["NTFY_PRIORITY"]
